@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qazaq Republic at MEGA Silk Way in Astana, with clothing categories, location and customer service contacts.">
+    <meta name="author" content="Arsen Ibatullin">
+    <title>Visit | Qazaq Republic</title>
+</head>
+<body>
+    <!-- Author: Arsen Ibatullin. Form and markup corrections assisted by Codex. -->
+    <header>
+        <p>Qazaq Republic at MEGA Silk Way</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="visit.html">Visit the store</a></li>
+                <li><a href="colophon.html">About the website</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Visit the store</h1>
+        <section id="store-information">
+            <h2>Store Information</h2>
+            <p>The Qazaq Republic store is located on the second floor of MEGA Silk Way at 62 Kabanbay Batyr Avenue, Astana. The official store directory lists opening hours from 10:00 to 22:00. Check the latest information before travelling, especially if you are planning a visit on a holiday.
+                If you are looking for a particular item, contact Qazaq Republic customer service before your visit. Provide the product name and ask about the size, colour and availability at this branch. The telephone number and email address below belong to the brand’s customer service, rather than a verified direct contact for this store.</p>
+
+            <address>
+                <p lang="ru">Астана, проспект Кабанбай батыра 62, ТРЦ “Mega Silk Way”, 2 этаж</p>
+
+                Qazaq Republic customer service:<br>
+                <a href="mailto:customerservice@qazaqrepublic.com">customerservice@qazaqrepublic.com</a><br>
+                <a href="tel:+77015722440">+7 701 572 24 40</a>
+            </address>
+
+            <h3>Opening hours</h3>
+            <p>
+                <time datetime="10:00">10:00</time> -
+                <time datetime="22:00">22:00</time>
+            </p>
+        </section>
+        <section id="feedback-form">
+            <h2>Feedback Form</h2>
+            <p>This practice form lets visitors describe their shopping experience. You can enter your contact details, select the date of your visit, rate your experience and choose a feedback topic. The message field provides space to explain what you liked or what could be improved.
+                This form is part of an educational project. It is not connected to Qazaq Republic and does not deliver feedback to the store. Use fictional contact details when testing it. Required fields must be completed before the browser allows submission. The reset button restores the fields to their initial values.</p>
+
+            <form action="visit.html" method="get">
+                <!-- This is a practice form. There is no server-side processing, and the store does not receive the message. -->
+
+                <!-- Related fields are grouped so visitors can distinguish contact details, visit details and feedback. -->
+                <fieldset>
+                    <legend>Contact details</legend>
+                    <label for="name">Username:</label>
+                    <input type="text" id="name" name="username" required placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+                    <label for="number">Telephone:</label>
+                    <input type="tel" id="number" name="telephone" placeholder="+7 700 123 45 67">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Visit</legend>
+                    <label for="rating">Rating:</label>
+                    <!-- A range of 1 to 5 keeps ratings on the same scale and prevents out-of-range values. -->
+                    <input type="number" min="1" max="5" id="rating" name="rating" required placeholder="1 to 5" step="1">
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <fieldset>
+                        <legend>First visit? (required)</legend>
+                        <input type="radio" id="first-yes" value="Yes" name="first-visit" required>
+                        <label for="first-yes">Yes</label>
+                        <input type="radio" id="first-no" value="No" name="first-visit">
+                        <label for="first-no">No</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your feedback</legend>
+                    <label for="answer">Want an answer:</label>
+                    <input type="checkbox" id="answer" name="answer">
+
+                    <label for="topic">Topic:</label>
+                    <select name="topic" id="topic" required>
+                        <option value="" selected disabled>Choose a topic</option>
+                        <option value="service">Service</option>
+                        <option value="products">Product range</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="message" required placeholder="Tell us about your visit"></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <address>
+            Qazaq Republic customer service:<br>
+            <a href="tel:+77015722440">+7 701 572 24 40</a><br>
+            <a href="mailto:customerservice@qazaqrepublic.com">customerservice@qazaqrepublic.com</a>
+        </address>
+        <p>
+            <small>
+                Contact source:
+                <a href="https://qazaqrepublic.com/ru/contacts">official contacts</a>.
+            </small>
+        </p>
+        <p><small>&copy; 2026. Independent educational guide. Qazaq Republic is the featured brand.</small></p>
+    </footer>
+</body>
+</html>
