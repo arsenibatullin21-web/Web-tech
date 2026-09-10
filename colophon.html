@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How this educational Qazaq Republic website was built: development tools, page structure, browser testing and information sources.">
+    <meta name="author" content="Arsen Ibatullin">
+    <title>About this website | Qazaq Republic</title>
+</head>
+<body>
+<!-- Author: Arsen Ibatullin. Form and markup corrections assisted by Codex. -->
+<header>
+    <p>Qazaq Republic at MEGA Silk Way</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="visit.html">Visit the store</a></li>
+            <li><a href="colophon.html">About the website</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<main>
+    <h1>About this website</h1>
+    <section id="tools-structure">
+        <h2>Tools and structure</h2>
+        <p>I am building this website in IntelliJ IDEA using HTML. It contains four pages: a home page introducing the store, a catalogue showing clothing categories and prices, a visit page with contact information and a practice feedback form, and this page explaining the development process. Relative links connect the pages. The website opens locally in a browser and does not use CSS or JavaScript.</p>
+        <br>
+    </section>
+
+    <section id="dev-test">
+        <h2>Development and testing</h2>
+        <p>
+            I save changes with <kbd>Ctrl</kbd> + <kbd>S</kbd>
+            and refresh the browser with <kbd>Ctrl</kbd> + <kbd>R</kbd>.
+        </p>
+
+        <!-- pre preserves line breaks so the HTML example is easier to read. -->
+        <!-- code makes imitation of real code in IDE. -->
+        <pre><code>&lt;label for="email"&gt;Email&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;</code></pre>
+
+        <p>
+            When I left a required field empty and clicked Submit,
+            the browser displayed:
+            <samp lang="eng">This field is required.</samp>
+        </p>
+        
+        <p>
+            When I entered an email address without an @ symbol,
+            the browser displayed this message in Russian
+            (translated here into English):
+            <samp>Please include an '@' in the email address.
+                'fdsafas' is missing an '@'.</samp>
+        </p><br>
+    </section>
+
+    <section id="sources-assist">
+        <h2>Sources and assistance</h2>
+        <p>Store information and contact details were checked using the official Qazaq Republic website.</p>
+        <p>
+            AI assistance included explanations of HTML, draft text,
+            creation of the initial home page, and corrections to the feedback form.
+        </p>
+        <ul>
+            <li>
+                <a href="https://qazaqrepublic.com/ru/stores">
+                    Official store directory
+                </a>
+            </li>
+            <li>
+                <a href="https://qazaqrepublic.com/ru/contacts">
+                    Official contact information
+                </a>
+            </li>
+        </ul>
+        <br>
+        <blockquote>
+            <p>Qazaq Repubulic clothes are the best.</p>
+            <footer>— Stranger, 10 September 2026</footer>
+        </blockquote>
+    </section>
+</main>
+<hr>
+<footer>
+    <address>
+        Qazaq Republic customer service:<br>
+        <a href="tel:+77015722440">+7 701 572 24 40</a><br>
+        <a href="mailto:customerservice@qazaqrepublic.com">customerservice@qazaqrepublic.com</a>
+    </address>
+    <p>
+        <small>
+            Contact source:
+            <a href="https://qazaqrepublic.com/ru/contacts">official contacts</a>.
+        </small>
+    </p>
+    <p><small>&copy; 2026. Independent educational guide. Qazaq Republic is the featured brand.</small></p>
+</footer>
+</body>
+</html>

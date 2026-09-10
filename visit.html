@@ -19,7 +19,12 @@
                 <li><a href="colophon.html">About the website</a></li>
             </ul>
         </nav>
+        <p>
+            <a href="#store-information">Store information</a> |
+            <a href="#feedback-form">Feedback form</a>
+        </p>
     </header>
+    <hr>
     <main>
         <h1>Visit the store</h1>
         <section id="store-information">
@@ -41,6 +46,7 @@
                 <time datetime="22:00">22:00</time>
             </p>
         </section>
+        <hr>
         <section id="feedback-form">
             <h2>Feedback Form</h2>
             <p>This practice form lets visitors describe their shopping experience. You can enter your contact details, select the date of your visit, rate your experience and choose a feedback topic. The message field provides space to explain what you liked or what could be improved.
@@ -97,11 +103,15 @@
                     <textarea id="msg" name="message" required placeholder="Tell us about your visit"></textarea>
                 </fieldset>
 
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
+                <!-- A div groups the form buttons because no more specific semantic element fits. -->
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
             </form>
         </section>
     </main>
+    <hr>
     <footer>
         <address>
             Qazaq Republic customer service:<br>
